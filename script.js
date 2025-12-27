@@ -30,7 +30,8 @@ window.addBtn = function (isChecked = false) {
 
     label.style.cursor = "pointer";
 
-    label.addEventListener("click", function () {
+    label.addEventListener("click", function (event) {
+        event.preventDefault();        // ✅ stop auto toggle
         checkbox.checked = !checkbox.checked;
         label.classList.toggle("checked");
     });
