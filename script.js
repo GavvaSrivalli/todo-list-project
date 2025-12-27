@@ -18,6 +18,7 @@ window.addBtn = function (isChecked = false) {
     checkbox.type = "checkbox";
     checkbox.classList.add("checkbox");
     checkbox.checked = isChecked;
+    checkbox.id = "checkbox" + uniqueid; 
 
     let labelContainer = document.createElement("div");
     labelContainer.classList.add("labelContainer", "d-flex", "flex-row");
@@ -25,6 +26,7 @@ window.addBtn = function (isChecked = false) {
     let label = document.createElement("label");
     label.textContent = createtask.value;
     label.classList.add("task-list");
+    label.htmlFor = checkbox.id;            
 
     if (isChecked) {
         label.classList.add("checked");
