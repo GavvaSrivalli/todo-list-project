@@ -59,6 +59,7 @@ window.addBtn = function (isChecked = false) {
     list.appendChild(labelContainer);
     ulist.appendChild(list);
 
+    uniqueid++;
     createtask.value = "";
 };
 
