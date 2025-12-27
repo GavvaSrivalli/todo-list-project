@@ -26,7 +26,15 @@ window.addBtn = function (isChecked = false) {
     let label = document.createElement("label");
     label.textContent = createtask.value;
     label.classList.add("task-list");
-    label.htmlFor = checkbox.id;            
+    label.htmlFor = checkbox.id;  
+
+    label.style.cursor = "pointer";
+
+    label.addEventListener("click", function () {
+        checkbox.checked = !checkbox.checked;
+        label.classList.toggle("checked");
+    });
+
 
     if (isChecked) {
         label.classList.add("checked");
