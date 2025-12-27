@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.bg-container {
+    background-color: #F5F5F5;
+    height: 100vh;
+}
+
+.heading {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.create-task {
+    border-radius: 8px;
+    width: 100%;
+    border-width: 0;
+    height: 40px;
+    padding: 20px;
+}
+
+.task-list {
+    font-size: 18px;
+    height: 40px;
+    flex: 1;
+    padding: 6px;
+}
+
+.checked {
+    text-decoration: line-through;
+}
+
+.checkbox {
+    height: 20px;
+    width: 30px;
+    margin-top: 9px;
+}
+
+#ulist {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.delete-icon-container {
+    height: 30px;
+    width: auto;
+    border-radius: 8px;
+    padding-right: 10px;
+    text-align: right;
+}
+
+.labelContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #D0E4FF;
+    border-radius: 8px;
+    height: 40px;
+    padding-right: 10px;
+    padding-left: 5px;
+    margin-bottom: 10px;
+}
